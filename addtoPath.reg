@@ -1,0 +1,15 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Directory\shell\AddToPath]
+@="Add to PATH"
+"Icon"="shell32.dll, 256"
+
+[HKEY_CLASSES_ROOT\Directory\shell\AddToPath\command]
+@="cmd.exe /c \"setx PATH \"%PATH%;%1\"\""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\AddToPath]
+@="Add to PATH"
+"Icon"="shell32.dll, 256"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\AddToPath\command]
+@="cmd.exe /c \"setx PATH \"%PATH%;%V\"\""
